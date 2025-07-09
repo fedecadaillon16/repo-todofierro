@@ -9,53 +9,61 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <body>
-       <header class="disenioHeader">
+<!--header-->        
+      <header class="header-fierro">
+  <div class="titulo-fierro">
     <h1>TODO FIERRO</h1>
-    <h3>INDUSTRIA ARGENTINA</h3>
-    <div>
+    <h3>Industria Argentina</h3>
+  </div>
 
-    </div>
-    <!--Encierra el centro de navegacion principal de un archivo, en criollo, menu de navegacion-->
-    <nav>
-<ul>
-   <li><a href="../index.html">Inicio</a></li> 
-   <li><a href="productos.html">Productos</a></li>
-   <li><a href="galeria.html">Galeria</a></li>
-   <li><a href="preguntasff.html">Preguntas Frecuentes</a></li>
-   <li><a href="#">Contacto</a></li>
-   <li><a href="materiales.html">Materiales</a></li>
-</ul>
-    </nav>
-   </header>
-    
+  <nav class="nav-fierro">
+    <ul>
+      <li><a href="../index.html">Inicio</a></li> 
+      <li><a href="../pages/productos.html">Productos</a></li>
+      <li><a href="../pages/preguntasff.html">Preguntas Frecuentes</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
-<main class="colorFondo">
-    <img src="../assets/logo tf.jpeg" alt="Logo empresarial TODO FIERRO" class="tamañoLogotf">
-<h2 class="text-center">NUESTROS CONTACTOS Y ¿QUIENES SOMOS?</h2>
-<p class="text-center">Somos una empresa familiar que se dedica a la construccion de materiales para la decoraciòn del hogar, fundada en 2005 ubicada en el sur de la provincia de Buenos Aires, Repùblica Argentina.</p>
-<p class="text-center">Nuestra idea es plasmar lo que el cliente desea con los materiales que ellos mismos impongan, demostrando asì que podemos plasmar sus deseos en los muebles.</p>
+<!--fin header-->
 
-<div>
-<img src="../assets/mapita.png" alt="mapa" style="width: 10%;" class="centrar">
-<p style="color: black;"> ARISTÓBULO DEL VALLE 1578</p> <img src="../assets/loguito mapa.jpg">
-<style>
-   
-</style></div>
+<!--main-->    
+<main class="main-contacto">
+  <img src="../assets/logo tf.jpeg" alt="Logo TODO FIERRO" class="logo-contacto" />
+
+  <section class="texto-bienvenida">
+    <h2>NUESTROS CONTACTOS Y ¿QUIÉNES SOMOS?</h2>
+    <p>Somos una empresa familiar dedicada a la construcción de materiales para la decoración del hogar, fundada en 2005 y ubicada en el sur de la Provincia de Buenos Aires, República Argentina.</p>
+    <p>Nuestra idea es plasmar lo que el cliente desea con los materiales que ellos mismos elijan, demostrando así que podemos convertir sus ideas en muebles reales.</p>
+  </section>
+
+  <section class="ubicacion">
+    <img src="../assets/mapita.png" alt="Mapa ubicación" class="mapa-img" />
+    <p class="direccion">ARISTÓBULO DEL VALLE 1578</p>
+    <img src="../assets/loguito mapa.jpg" alt="Icono mapa" class="icono-mapa" />
+  </section>
 </main>
-     <footer style="text-align: center;">
- <h4>Seguinos En:</h4>       
-<img src="/assets/png-transparent-instagram-instagram-logo-3d-instagram-logo-social-media-logo-application-3d-icon.png" alt="Logo instagram" class="detallesImagen">
-<img src="/assets/imagen facebook.jpg" alt="Logo Facebook" class="detallesImagen">
-<img src="/assets/WHATSAPP.jpg" alt="logo WHATSAPP" class="detallesImagen">
+<!--fin main-->
 
+<!--footer-->
+<footer class="footer">
+  <h4>¡Seguinos en nuestras redes!</h4>
 
+  <div class="redes">
+    <img src="/assets/png-transparent-instagram-instagram-logo-3d-instagram-logo-social-media-logo-application-3d-icon.png" alt="Instagram">
+    <img src="/assets/imagen facebook.jpg" alt="Facebook">
+    <img src="/assets/WHATSAPP.jpg" alt="WhatsApp">
+  </div>
 
-<form action="">
-    <label for="newsletter">Susctibite a nuestro newsletter</label>
-    <input type="email">
-</form>
+  <form class="newsletter">
+    <label for="email">Suscribite a nuestro newsletter</label><br>
+    <input type="email" id="email" placeholder="Tu email">
+    <button type="submit">Enviar</button>
+  </form>
 
-<p>texto de copyright 2025</p>
-    </footer>
+  <p class="copy">© 2025 - Gracias por visitarnos ❤️</p>
+</footer>
 </html>

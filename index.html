@@ -7,74 +7,80 @@
     <link rel="stylesheet" href="./styles/styles.css">
     
     <!-- Link de bootstrap-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!--Encierra el contenido del encabezado del sitio: titulo, navegacion, redes, carrito, input de busqueda, etc-->
-   <header class="disenioHeader">
+    
+<!--header-->
+
+<header class="header-fierro">
+  <div class="titulo-fierro">
     <h1>TODO FIERRO</h1>
-    <h3>INDUSTRIA ARGENTINA</h3>
-  
-    <!--Encierra el centro de navegacion principal de un archivo, en criollo, menu de navegacion-->
-    <nav>
-<ul>
-   <li><a href="#">Inicio</a></li> 
-   <li><a href="./pages/productos.html" >Productos</a></li>
-   <li><a href="./pages/galeria.html"  >Galeria</a></li>
-   <li><a href="./pages/preguntasff.html" >Preguntas Frecuentes</a></li>
-   <li><a href="./pages/contacto.html" >Contacto</a></li>
-   <li><a href="./pages/materiales.html">Materiales</a></li>
-</ul>
-    </nav>
-   </header>
-   <!--Encierra el contenido princial de un archivo html -->
-    <main>
-        <img src="./assets/logo tf.jpeg" alt="Logo empresarial TODO FIERRO" class="tamañoLogotf">
-    <!--Separa en temas el contenido especifico de un archivo-->    
-        </div>
-        <section>
-            <div class="disenioParrafo">
-<h2>¡LOS MAS VENDIDOS!</h2>
-         </div>
-<div class="contenedor-productos">
-    <div class="producto">
-    <img src="./assets/juego comedor.jpeg" alt="Juego comedor" class="detallesProductos">
-    <h3>Juego comedor</h3>
-    <p class="precioDescripcion">$750.000</p>
-    <button>Agregar al carrito</button>
+    <h3>Industria Argentina</h3>
+  </div>
+
+  <nav class="nav-fierro">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="./pages/productos.html">Productos</a></li>
+      <li><a href="./pages/preguntasff.html">Preguntas Frecuentes</a></li>
+      <li><a href="./pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<!--fin header-->
+
+
+   <!--menu de navegacion-->
+
+<main class="main-fierro">
+  <img src="./assets/logo tf.jpeg" alt="Logo empresarial TODO FIERRO" class="logo-tf">
+
+  <section class="productos-section">
+    <h2>¡LOS MÁS VENDIDOS!</h2>
+    <div class="contenedor-productos">
+      <article class="producto">
+        <img src="./assets/juego comedor.jpeg" alt="Juego comedor" class="producto-img">
+        <h3>Juego comedor</h3>
+        <p class="precio">$750.000</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <img src="./assets/mesa ratona.jpeg" alt="Mesa ratona" class="producto-img">
+        <h3>Mesa ratona</h3>
+        <p class="precio">$400.000</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+      </article>
+
+      <article class="producto">
+        <img src="./assets/bar mesa.jpeg" alt="Mesa barra" class="producto-img">
+        <h3>Mesa estilo barra</h3>
+        <p class="precio">$300.000</p>
+        <button class="btn-carrito">Agregar al carrito</button>
+      </article>
+    </div>
+  </section>
+</main>
     
-</div>
-<div class="producto">
-    <img src="./assets/mesa ratona.jpeg" alt="Mesa ratona" class="detallesProductos">
-    <h3>Mesa ratona</h3>
-    <p class="precioDescripcion">$400.000</p>
-    <button>Agregar al carrito</button>
-</div>
-<div class="producto">
-    <img src="./assets/bar mesa.jpeg" alt="Mesa barra" class="detallesProductos">
-    <h3>Mesa estilo barra</h3>
-    <p class="precioDescripcion">$300.000</p>
-    <button>Agregar al carrito</button>
-</div>
-</div>
-        </section>
-    </main>
-    
-    <!--Encierra el contenido de pie de pagina-->
-    <footer style="text-align: center;">
- <h4>Seguinos En:</h4>       
-<img src="./assets/png-transparent-instagram-instagram-logo-3d-instagram-logo-social-media-logo-application-3d-icon.png" alt="Logo instagram" class="detallesImagen">
-<img src="/assets/imagen facebook.jpg" alt="Logo Facebook" class="detallesImagen">
-<img src="/assets/WHATSAPP.jpg" alt="logo WHATSAPP" class="detallesImagen">
+    <!--footer-->
+  <footer class="footer">
+  <h4>¡Seguinos en nuestras redes!</h4>
 
+  <div class="redes">
+    <img src="/assets/png-transparent-instagram-instagram-logo-3d-instagram-logo-social-media-logo-application-3d-icon.png" alt="Instagram">
+    <img src="/assets/imagen facebook.jpg" alt="Facebook">
+    <img src="/assets/WHATSAPP.jpg" alt="WhatsApp">
+  </div>
 
+  <form class="newsletter">
+    <label for="email">Suscribite a nuestro newsletter</label><br>
+    <input type="email" id="email" placeholder="Tu email">
+    <button type="submit">Enviar</button>
+  </form>
 
-<form action="">
-    <label for="newsletter">Susctibite a nuestro newsletter</label>
-    <input type="email">
-</form>
+  <p class="copy">© 2025 - Gracias por visitarnos ❤️</p>
+</footer>
 
-<p>texto de copyright 2025</p>
-    </footer>
 </body>
 </html>
