@@ -1,0 +1,48 @@
+.footer {
+  background-color: $color-primario;
+  color: $color-footer-texto;
+  text-align: center;
+  padding: $padding-base;
+  font-family: sans-serif;
+
+  h4 {
+    margin-bottom: 10px;
+    color: $color-footer-texto;
+  }
+
+  .redes {
+    img {
+      width: 40px;
+      margin: 0 10px;
+      border-radius: $border-radius-base;
+      @include sombra($box-shadow-suave);
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .newsletter {
+    margin: 20px 0;
+
+    input[type="email"] {
+      padding: 8px;
+      border: 2px solid $color-newsletter-borde;
+      border-radius: 5px;
+      width: 200px;
+    }
+
+    button {
+      @include boton($color-newsletter-boton, $color-newsletter-borde);
+      margin-left: 5px;
+    }
+  }
+
+  .copy {
+    margin-top: 15px;
+    font-size: 14px;
+    color: $color-texto-oscuro;
+  }
+}

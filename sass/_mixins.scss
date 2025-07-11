@@ -1,0 +1,20 @@
+/*botones*/
+@mixin boton($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+/* sombras*/
+@mixin sombra($color: $box-shadow-base) {
+  box-shadow: $color;
+}
