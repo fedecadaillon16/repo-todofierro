@@ -1,0 +1,145 @@
+.main-fierro, .main-contacto {
+  background-color: $color-secundario;
+  color: $color-texto-claro;
+  padding: $padding-base;
+  font-family: $fuente-principal;
+  text-align: center;
+
+  &.main-contacto {
+    background-color: #1e1e1e;
+    padding: 40px 20px;
+  }
+
+  .logo-tf, .logo-contacto {
+    max-width: $max-width-logo;
+    margin: 0 auto 30px;
+    display: block;
+    border-radius: $border-radius-base;
+    @include sombra(#555);
+  }
+
+  .productos-section, .info-textos, .texto-bienvenida {
+    h2 {
+      color: $color-acento;
+      margin-bottom: 25px;
+      letter-spacing: 1.2px;
+    }
+  }
+
+  .info-textos {
+    &.secundarios {
+      h3 {
+        margin: 20px 0 8px;
+        color: #ccc;
+      }
+
+      p {
+        color: $color-texto-gris;
+        margin: 0 0 30px;
+      }
+    }
+  }
+
+  .texto-bienvenida {
+    p {
+      max-width: 800px;
+      margin: 10px auto;
+      line-height: 1.6;
+      color: #ccc;
+
+      @media (max-width: 600px) {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .producto {
+    background-color: #333;
+    padding: 15px;
+    border-radius: $border-radius-base;
+    width: $width-producto;
+    @include sombra;
+    text-align: center;
+    color: $color-texto-claro;
+
+    .producto-img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin: 10px 0 8px;
+      color: $color-acento-claro;
+    }
+
+    .precio {
+      color: $color-texto-secundario;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .btn-carrito {
+      @include boton($color-boton, $color-boton-hover);
+    }
+  }
+
+  .ubicacion {
+    margin-top: 40px;
+
+    .mapa-img {
+      width: 120px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      @include sombra(#444);
+
+      @media (max-width: 600px) {
+        width: 80px;
+      }
+    }
+
+    .direccion {
+      color: $color-texto-secundario;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .icono-mapa {
+      width: 40px;
+      vertical-align: middle;
+      margin-left: 8px;
+
+      @media (max-width: 600px) {
+        width: 30px;
+      }
+    }
+  }
+
+  .accordion-button {
+    &:not(.collapsed) {
+      background-color: #5a1e1e !important;
+      color: #fff !important;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

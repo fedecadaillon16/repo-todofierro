@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/*colores*/
+/*tamaños*/
+
+.header-fierro {
+  background-color: #2d2d2d;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+}
+.header-fierro .titulo-fierro h1 {
+  margin: 0;
+  color: #d4af37;
+}
+.header-fierro .titulo-fierro h3 {
+  margin: 5px 0 15px;
+  color: #bbb;
+}
+.header-fierro .nav-fierro ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header-fierro .nav-fierro li {
+  margin: 5px;
+}
+.header-fierro .nav-fierro a {
+  text-decoration: none;
+  color: #f2f2f2;
+  background-color: #444;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.header-fierro .nav-fierro a:hover {
+  background-color: #d4af37;
+}
+
+.colorFondo {
+  background-color: #f5f5f5;
+}
+
+.main-fierro, .main-contacto {
+  background-color: #1f1f1f;
+  color: #ddd;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+.main-fierro.main-contacto, .main-contacto.main-contacto {
+  background-color: #1e1e1e;
+  padding: 40px 20px;
+}
+.main-fierro .logo-tf, .main-fierro .logo-contacto, .main-contacto .logo-tf, .main-contacto .logo-contacto {
+  max-width: 200px;
+  margin: 0 auto 30px;
+  display: block;
+  border-radius: 8px;
+  box-shadow: #555;
+}
+.main-fierro .productos-section h2, .main-fierro .info-textos h2, .main-fierro .texto-bienvenida h2, .main-contacto .productos-section h2, .main-contacto .info-textos h2, .main-contacto .texto-bienvenida h2 {
+  color: #d4af37;
+  margin-bottom: 25px;
+  letter-spacing: 1.2px;
+}
+.main-fierro .info-textos.secundarios h3, .main-contacto .info-textos.secundarios h3 {
+  margin: 20px 0 8px;
+  color: #ccc;
+}
+.main-fierro .info-textos.secundarios p, .main-contacto .info-textos.secundarios p {
+  color: #aaa;
+  margin: 0 0 30px;
+}
+.main-fierro .texto-bienvenida p, .main-contacto .texto-bienvenida p {
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+  color: #ccc;
+}
+@media (max-width: 600px) {
+  .main-fierro .texto-bienvenida p, .main-contacto .texto-bienvenida p {
+    padding: 0 10px;
+  }
+}
+.main-fierro .contenedor-productos, .main-contacto .contenedor-productos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .main-fierro .contenedor-productos, .main-contacto .contenedor-productos {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main-fierro .contenedor-productos, .main-contacto .contenedor-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-fierro .producto, .main-contacto .producto {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 0 8px #222;
+  text-align: center;
+  color: #ddd;
+}
+.main-fierro .producto .producto-img, .main-contacto .producto .producto-img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.main-fierro .producto h3, .main-contacto .producto h3 {
+  margin: 10px 0 8px;
+  color: #e8b747;
+}
+.main-fierro .producto .precio, .main-contacto .producto .precio {
+  color: #bbb;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.main-fierro .producto .btn-carrito, .main-contacto .producto .btn-carrito {
+  background-color: #661a1a;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.main-fierro .producto .btn-carrito:hover, .main-contacto .producto .btn-carrito:hover {
+  background-color: #8b2323;
+}
+.main-fierro .ubicacion, .main-contacto .ubicacion {
+  margin-top: 40px;
+}
+.main-fierro .ubicacion .mapa-img, .main-contacto .ubicacion .mapa-img {
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: #444;
+}
+@media (max-width: 600px) {
+  .main-fierro .ubicacion .mapa-img, .main-contacto .ubicacion .mapa-img {
+    width: 80px;
+  }
+}
+.main-fierro .ubicacion .direccion, .main-contacto .ubicacion .direccion {
+  color: #bbb;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.main-fierro .ubicacion .icono-mapa, .main-contacto .ubicacion .icono-mapa {
+  width: 40px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+@media (max-width: 600px) {
+  .main-fierro .ubicacion .icono-mapa, .main-contacto .ubicacion .icono-mapa {
+    width: 30px;
+  }
+}
+.main-fierro .accordion-button:not(.collapsed), .main-contacto .accordion-button:not(.collapsed) {
+  background-color: #5a1e1e !important;
+  color: #fff !important;
+}
+.main-fierro .accordion-button:focus, .main-contacto .accordion-button:focus {
+  box-shadow: none;
+}
+
+.footer {
+  background-color: #2d2d2d;
+  color: #0e0600;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
+.footer h4 {
+  margin-bottom: 10px;
+  color: #0e0600;
+}
+.footer .redes img {
+  width: 40px;
+  margin: 0 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+.footer .redes img:hover {
+  transform: scale(1.1);
+}
+.footer .newsletter {
+  margin: 20px 0;
+}
+.footer .newsletter input[type=email] {
+  padding: 8px;
+  border: 2px solid #062029;
+  border-radius: 5px;
+  width: 200px;
+}
+.footer .newsletter button {
+  background-color: #15476d;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-left: 5px;
+}
+.footer .newsletter button:hover {
+  background-color: #062029;
+}
+.footer .copy {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/*# sourceMappingURL=styles.css.map */
