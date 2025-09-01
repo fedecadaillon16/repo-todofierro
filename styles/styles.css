@@ -224,5 +224,51 @@
   font-size: 14px;
   color: #555;
 }
+.carrito-section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color:#333333;
+  border-radius: 8px;
+}
+
+.carrito-items {
+  min-height: 100px;
+}
+
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.carrito-item button {
+  background-color: #5a1e1e;
+  color: #ddd;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carrito-item button:hover {
+  background-color:#5a1e1e;
+}
+
+#total {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#vaciar-carrito {
+  margin-top: 10px;
+}
+main.bg-dark {
+    background-color: #1f1f1f !important;
+}
+
 
 /*# sourceMappingURL=styles.css.map */
