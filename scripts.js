@@ -75,3 +75,8 @@ document.getElementById('vaciar-carrito').addEventListener('click', vaciarCarrit
 
 // Actualizar el carrito al cargar la página
 document.addEventListener('DOMContentLoaded', actualizarCarrito);
+
+document.querySelector('.logo-link').addEventListener('click', function(e) {
+  e.preventDefault(); // Evita que el enlace recargue
+  alert('¡Bienvenido a TodoFierro! Descubre nuestros productos.');
+});
