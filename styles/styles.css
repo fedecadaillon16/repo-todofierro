@@ -270,5 +270,43 @@ main.bg-dark {
     background-color: #1f1f1f !important;
 }
 
+.why-choose-us {
+  background-color: #f8f8f8; /* Fondo gris claro para contraste */
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.why-choose-us .card {
+  transition: transform 0.3s ease;
+}
+
+.why-choose-us .card:hover {
+  transform: translateY(-5px); /* Efecto hover para dinamismo */
+}
+
+.why-choose-us .card-body i {
+  color: #d32f2f !important; /* !important asegura que se aplique sobre otros estilos */
+}
+
+.why-choose-us .card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.why-choose-us .card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .why-choose-us .card {
+    margin-bottom: 20px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
